@@ -8,7 +8,7 @@ import { COLLEGE_DATA } from './catalog-data'; // Assume this is the correct pat
 })
 export class CollegeDataService {
   private college!: College;
-  private static readonly imageFolder ='assets/Images/';
+  private static readonly imageFolder ='/assets/Images/';
   constructor() {
     this.initializeCollege();
   }

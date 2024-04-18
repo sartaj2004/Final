@@ -8,8 +8,8 @@ import { College } from '../college';
   styleUrls: ['./college.component.css']
 })
 export class CollegeComponent implements OnInit {
-  college: College = new College(); // Initialize with default values
-  imageUrl = '/assets/Images/';
+  college: College = new College();
+  // Initialize with default values
 
   constructor(private collegeDataService: CollegeDataService) {}
 

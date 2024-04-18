@@ -7,6 +7,5 @@
     <p>Location: {{ college.location }}</p>
     <p>Full-time Students: {{ college.students.fullTime }}</p>
     <p>Part-time Students: {{ college.students.partTime }}</p>
-    <img [src]="college.image"
-         [alt]="'Image of ' + college.name">
+    <img [src]="'/assets/Images/' + college.image" [alt]="'Image of ' + college.name">
   </div>
