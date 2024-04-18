@@ -1,1 +1,12 @@
-<p>college works!</p>
+
+  <div *ngIf="college">
+    <h2>{{ college.name }}</h2>
+
+    <p>Type: {{ college.type }}</p>
+    <p>Established: {{ college.established }}</p>
+    <p>Location: {{ college.location }}</p>
+    <p>Full-time Students: {{ college.students.fullTime }}</p>
+    <p>Part-time Students: {{ college.students.partTime }}</p>
+    <img [src]="college.image"
+         [alt]="'Image of ' + college.name">
+  </div>
